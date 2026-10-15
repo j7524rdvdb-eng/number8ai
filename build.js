@@ -52,7 +52,7 @@ ${jsonld.map(j=>`<script type="application/ld+json">${JSON.stringify(j)}</script
 <main id="main">${body}</main>
 <footer class="site"><div class="wrap">
 <div><strong>${esc(site.name)}</strong> — ${esc(site.tagline)}.<br>Made in Aotearoa New Zealand. Last updated ${esc(site.lastUpdated)}.</div>
-<div><a href="${B}/about/">About</a> · <a href="${B}/submit/">Submit a tool</a> · <a href="${B}/sponsor/">Sponsor</a> · <a href="${B}/llms.txt">llms.txt</a></div>
+<div><a href="${B}/about/">About</a> · <a href="${B}/submit/">Submit a tool</a> · <a href="${B}/sponsor/">Sponsor</a> · <a href="${B}/llms.txt">llms.txt</a> · <a href="mailto:${esc(site.contactEmail)}">${esc(site.contactEmail)}</a></div>
 </div></footer>
 <script src="${B}/assets/app.js" defer></script>
 </body></html>`;
@@ -81,7 +81,7 @@ const newsletter=()=>`<section class="newsletter" id="newsletter" aria-labelledb
 const sections=cats.map(c=>{const list=tools.filter(t=>t.category===c.slug);if(!list.length)return '';
 return `<section class="cat-block" id="cat-${c.slug}"><div class="section-title"><h2>${c.icon} ${esc(c.name)}</h2><a href="${B}/category/${c.slug}/">View all ${list.length} →</a></div><p>${esc(c.blurb)}</p><div class="grid">${list.map(card).join('')}</div></section>`;}).join('');
 
-const orgLd={"@context":"https://schema.org","@type":"Organization","name":site.name,"url":site.baseUrl,"areaServed":"NZ"};
+const orgLd={"@context":"https://schema.org","@type":"Organization","name":site.name,"url":site.baseUrl,"email":site.contactEmail,"contactPoint":{"@type":"ContactPoint","email":site.contactEmail,"contactType":"customer support","areaServed":"NZ"},"areaServed":"NZ"};
 const webLd={"@context":"https://schema.org","@type":"WebSite","name":site.name,"url":site.baseUrl,"description":site.description,"inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":abs('/?q={search_term_string}'),"query-input":"required name=search_term_string"}};
 const listLd=(list,name)=>({"@context":"https://schema.org","@type":"ItemList","name":name,"numberOfItems":list.length,"itemListElement":list.map((t,i)=>({"@type":"ListItem","position":i+1,"item":{"@type":"SoftwareApplication","name":t.name,"url":t.url,"description":t.description,"applicationCategory":"BusinessApplication","operatingSystem":"Web"}}))});
 
@@ -126,9 +126,10 @@ pages['sponsor/index.html']=layout({title:'Sponsor us — reach Kiwi small busin
 <div class="pkg"><h3>Founding sponsor bundle</h3><div class="price">NZ$399 <small>/ month — suggested, TBC</small></div><ul><li>Featured spot for 1 week each month</li><li>2 newsletter mentions</li><li>1 category sponsorship</li></ul></div>
 </div>
 <h2>How it works</h2>
-<ol><li>Get in touch with your tool, the package you're interested in and preferred dates.</li><li>We check the tool is a good fit for NZ small businesses (we only promote real, working products).</li><li>You approve the copy, we schedule it, and it goes live.</li></ol>
+<ol><li>Email us with your tool, the package you're interested in and preferred dates.</li><li>We check the tool is a good fit for NZ small businesses (we only promote real, working products).</li><li>You approve the copy, we schedule it, and it goes live.</li></ol>
 <p>Sponsorship never changes our editorial listings, and every paid placement is clearly labelled.</p>
-<p class="notice"><strong>Sponsorship enquiries:</strong> contact details coming soon.</p>
+<p class="notice"><strong>Sponsorship enquiries:</strong> <a href="mailto:${esc(site.contactEmail)}?subject=Sponsorship%20enquiry">${esc(site.contactEmail)}</a></p>
+<p><a class="btn" href="mailto:${esc(site.contactEmail)}?subject=Sponsorship%20enquiry">Email us about sponsorship</a></p>
 </section></div>`});
 
 pages['submit/index.html']=layout({title:'Submit an AI tool',description:`Know an AI tool that helps New Zealand small businesses? Submit it to ${site.name} — NZ-made tools especially welcome.`,pathName:'/submit/',active:'/submit/',jsonld:[orgLd],body:`
@@ -136,18 +137,14 @@ pages['submit/index.html']=layout({title:'Submit an AI tool',description:`Know a
 <h1>Submit a tool</h1>
 <p class="lead">Built an AI tool, or love one that saves your business time? Tell us about it. NZ-made tools and anything that plays nicely with Xero, NZ GST or local payment providers are especially welcome.</p>
 <p class="notice">Listings are free and editorial — we check every tool before it goes live. Want guaranteed placement? See <a href="${B}/sponsor/">sponsorship options</a>.</p>
-<form class="stack" data-placeholder action="#" method="post">
-<label>Tool name<input name="name" required></label>
-<label>Website<input name="url" type="url" placeholder="https://" required></label>
-<label>Category<select name="category">${cats.map(c=>`<option value="${c.slug}">${esc(c.name)}</option>`).join('')}</select></label>
-<label>What does it do? (one or two sentences)<textarea name="description" rows="3" required></textarea></label>
-<label>Pricing (free plan / starting price)<input name="pricing"></label>
-<label>Anything NZ-specific? (NZ-made, Xero integration, GST support, NZ data hosting…)<textarea name="nz" rows="2"></textarea></label>
-<label>Your email<input name="email" type="email" required></label>
-<button class="btn" type="submit">Submit tool</button>
-<p class="form-status" role="status"></p>
-</form>
-<p class="disclaimer">This form isn't connected yet — submissions open soon.</p>
+<div class="stack" style="display:block">
+<h2 style="margin-top:0">Email us your tool</h2>
+<p>Our online form isn't connected yet, so for now please email tool submissions to <a href="mailto:${esc(site.contactEmail)}?subject=Tool%20submission">${esc(site.contactEmail)}</a>.</p>
+<p>Include:</p>
+<ul><li>Tool name and website</li><li>Which category it fits (${cats.map(c=>esc(c.name)).join(', ')})</li><li>What it does, in one or two sentences</li><li>Pricing (free plan / starting price)</li><li>Anything NZ-specific — NZ-made, Xero integration, NZ GST support, NZ data hosting</li></ul>
+<p><a class="btn" href="mailto:${esc(site.contactEmail)}?subject=Tool%20submission">Email a tool submission</a></p>
+</div>
+
 </section></div>`});
 
 pages['about/index.html']=layout({title:'About',description:`${site.name} is an independent directory of AI tools for New Zealand small businesses — plain-English, checked, and Kiwi-focused.`,pathName:'/about/',active:'/about/',jsonld:[orgLd,{"@context":"https://schema.org","@type":"AboutPage","name":`About ${site.name}`,"url":abs('/about/')}],body:`
@@ -163,7 +160,7 @@ pages['about/index.html']=layout({title:'About',description:`${site.name} is an 
 <li>We highlight NZ-made tools wherever good ones exist.</li>
 <li>Sponsored placements are always clearly labelled and never change editorial listings.</li></ul>
 <h2>Get in touch</h2>
-<p>Spotted something out of date, or want to suggest a tool? <a href="${B}/submit/">Submit it here</a>.</p>
+<p>Spotted something out of date, or want to suggest a tool? <a href="${B}/submit/">submit it here</a> or email <a href="mailto:${esc(site.contactEmail)}">${esc(site.contactEmail)}</a>.</p>
 ${newsletter()}
 </section></div>`});
 

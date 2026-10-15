@@ -23,4 +23,4 @@ Static site, zero dependencies (Node 18+ only).
 ## TODO before launch
 - Confirm sponsor prices (currently labelled suggested/TBC on /sponsor/).
 - Wire newsletter form (`form[data-newsletter]`) and submit form (`form[data-placeholder]`) to real services.
-- Register domain, set `baseUrl` in site.json (base path is derived from it), and add a real contact email (removed for now).
+- Register domain, set `baseUrl` in site.json (base path is derived from it). Contact email: number8@mail.grokbot.com (site.json).
