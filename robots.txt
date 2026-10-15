@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://j7524rdvdb-eng.github.io/number8ai/sitemap.xml
