@@ -1,0 +1,14 @@
+[
+  {"slug":"accounting","name":"Accounting & bookkeeping","icon":"🧾","blurb":"AI that reads receipts, codes bills, reconciles and reports — many plug straight into Xero."},
+  {"slug":"marketing","name":"Marketing & social","icon":"📣","blurb":"Write posts, design graphics, plan campaigns and research your customers faster."},
+  {"slug":"customer-service","name":"Customer service & chat","icon":"💬","blurb":"AI agents and chatbots that answer customer questions around the clock."},
+  {"slug":"writing","name":"Writing & AI assistants","icon":"✍️","blurb":"General-purpose AI assistants for emails, proposals, research and ideas."},
+  {"slug":"design","name":"Design, photo & video","icon":"🎨","blurb":"Product photos, images and video without hiring a studio."},
+  {"slug":"scheduling","name":"Scheduling & bookings","icon":"📅","blurb":"Online bookings, smart calendars and appointment reminders."},
+  {"slug":"sales-crm","name":"Sales & CRM","icon":"🤝","blurb":"Keep track of leads and close more deals with less admin."},
+  {"slug":"trades","name":"Tradies & quotes","icon":"🛠️","blurb":"Job management, quoting and invoicing for builders, sparkies, plumbers and more."},
+  {"slug":"hospitality","name":"Hospitality","icon":"☕","blurb":"Reservations, rosters and phone answering for cafés, bars and restaurants."},
+  {"slug":"retail","name":"Retail, e-commerce & websites","icon":"🛍️","blurb":"Online stores, inventory forecasting and AI website builders."},
+  {"slug":"admin","name":"Admin, meetings & automation","icon":"🗂️","blurb":"Meeting notes, inbox help and workflows that run themselves."},
+  {"slug":"legal-hr","name":"Legal, HR & payroll","icon":"⚖️","blurb":"Contracts, HR, payroll and call notes for professional services."}
+]
