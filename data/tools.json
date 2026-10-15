@@ -8,7 +8,7 @@
     "pricing": "JAX features listed as included with Xero plans; one-month-free offer shown on site. See site for plan prices.",
     "nzNotes": "NZ-made — founded in Wellington.",
     "nzMade": true,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "dext",
@@ -19,7 +19,7 @@
     "pricing": "Free trial; see site for NZ pricing.",
     "nzNotes": "Integrates with Xero.",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "lightyear",
@@ -30,7 +30,7 @@
     "pricing": "Free trial; see site.",
     "nzNotes": "Integrates with Xero (listed on the Xero App Store NZ).",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "spotlight",
@@ -41,7 +41,7 @@
     "pricing": "Free trial; see site.",
     "nzNotes": "NZ-made — founded in Wellington. Integrates with Xero.",
     "nzMade": true,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "aider",
@@ -52,7 +52,18 @@
     "pricing": "From NZ$150/month minimum + GST, 12-month commitment (as stated on site).",
     "nzNotes": "NZ-made — based in Takapuna, Auckland. Connects to Xero; NZD pricing.",
     "nzMade": true,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
+  },
+  {
+    "id": "approvalmax",
+    "name": "ApprovalMax",
+    "url": "https://approvalmax.com/",
+    "category": "accounting",
+    "description": "Bill and purchase-order approval workflows with OCR invoice capture and Approval Intelligence, AI agents that flag bills that break a supplier's usual pattern and let you search approval history in plain language.",
+    "pricing": "14-day free trial, no credit card required (as stated on site); see site for plan prices.",
+    "nzNotes": "Integrates with Xero (syncs bills, purchase orders, budgets and batch payments).",
+    "nzMade": false,
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "canva",
@@ -63,7 +74,7 @@
     "pricing": "Free to get started; paid plans — see site.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "buffer",
@@ -74,7 +85,7 @@
     "pricing": "Free forever plan available (as stated on site).",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "hootsuite",
@@ -85,7 +96,7 @@
     "pricing": "Free trial; see site.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "mailchimp",
@@ -96,7 +107,7 @@
     "pricing": "Free plan and free trial mentioned on site; see site for pricing.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "ocoya",
@@ -107,7 +118,7 @@
     "pricing": "From $29/month, free trial (as shown on site).",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "blaze",
@@ -118,7 +129,7 @@
     "pricing": "Free trial; software from $79/month (as shown on site).",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "yabble",
@@ -129,7 +140,7 @@
     "pricing": "From US$800/month (as stated on site).",
     "nzNotes": "NZ-made — Auckland-based.",
     "nzMade": true,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "tidio",
@@ -140,7 +151,7 @@
     "pricing": "Free to start; free trial available.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "intercom-fin",
@@ -151,7 +162,7 @@
     "pricing": "From $19 per seat/month + $0.99 per Fin outcome (as shown on site); free trial.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "chatbase",
@@ -162,7 +173,7 @@
     "pricing": "Free trial; see site.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "zendesk",
@@ -173,7 +184,7 @@
     "pricing": "14-day free trial (as stated on site).",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "chatgpt",
@@ -184,7 +195,7 @@
     "pricing": "Free to sign up; paid plans — see site.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "claude",
@@ -195,7 +206,7 @@
     "pricing": "See site",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "gemini",
@@ -206,7 +217,7 @@
     "pricing": "See site",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "m365-copilot",
@@ -217,7 +228,7 @@
     "pricing": "See site",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "grammarly",
@@ -228,7 +239,7 @@
     "pricing": "Free plan — $0 USD/month (as shown on site).",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "perplexity",
@@ -239,7 +250,7 @@
     "pricing": "See site",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "jasper",
@@ -250,7 +261,7 @@
     "pricing": "Free trial; see site.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "firefly",
@@ -261,7 +272,7 @@
     "pricing": "See site",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "photoroom",
@@ -272,7 +283,7 @@
     "pricing": "Free to start; free trial available.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "descript",
@@ -283,7 +294,7 @@
     "pricing": "Free plan, no credit card required (as stated on site).",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "timely",
@@ -294,7 +305,7 @@
     "pricing": "See site",
     "nzNotes": "NZ-made — founded in Dunedin.",
     "nzMade": true,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "calendly",
@@ -305,7 +316,7 @@
     "pricing": "Free to get started; see site.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "reclaim",
@@ -316,7 +327,7 @@
     "pricing": "Free forever plan (as stated on site).",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "hubspot",
@@ -327,7 +338,7 @@
     "pricing": "Free tools available; paid plans — see site.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "pipedrive",
@@ -338,7 +349,7 @@
     "pricing": "14-day free trial, no credit card required (as stated on site).",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "tradify",
@@ -349,7 +360,7 @@
     "pricing": "14-day free trial; see site for plans.",
     "nzNotes": "NZ-made. Integrates with Xero.",
     "nzMade": true,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "fergus",
@@ -360,7 +371,7 @@
     "pricing": "Free trial; see site.",
     "nzNotes": "NZ-made — Auckland-based, with NZ support team.",
     "nzMade": true,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "servicem8",
@@ -371,7 +382,7 @@
     "pricing": "Free trial; see site.",
     "nzNotes": "Integrates with Xero.",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "nowbookit-sadie",
@@ -382,7 +393,7 @@
     "pricing": "See site",
     "nzNotes": "Operates in NZ with an NZ subsidiary (Now Book It Limited, Auckland).",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "deputy",
@@ -393,7 +404,7 @@
     "pricing": "Free to start; see site.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "sevenrooms",
@@ -404,7 +415,7 @@
     "pricing": "See site",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "shopify",
@@ -415,7 +426,7 @@
     "pricing": "Free to start; see site for plans.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "cin7",
@@ -426,7 +437,7 @@
     "pricing": "Free trial; see site.",
     "nzNotes": "NZ-made — Auckland-based. Integrates with Xero.",
     "nzMade": true,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "unleashed",
@@ -437,7 +448,7 @@
     "pricing": "14-day free trial, no credit card needed (as stated on site).",
     "nzNotes": "NZ-made — founded in Auckland. Integrates with Xero.",
     "nzMade": true,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "rocketspark",
@@ -448,7 +459,7 @@
     "pricing": "See site",
     "nzNotes": "NZ-made website builder (as stated on site).",
     "nzMade": true,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "otter",
@@ -459,7 +470,7 @@
     "pricing": "Free Basic plan; Business from $19.99/user/month (as shown on site).",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "fathom",
@@ -470,7 +481,7 @@
     "pricing": "Free forever plan (as stated on site).",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "zapier",
@@ -481,7 +492,7 @@
     "pricing": "Free to start; see site.",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "notion-ai",
@@ -492,7 +503,7 @@
     "pricing": "See site",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "fyxer",
@@ -503,7 +514,7 @@
     "pricing": "14-day free trial (as stated on site).",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "employment-hero",
@@ -514,7 +525,7 @@
     "pricing": "See site",
     "nzNotes": "Has a dedicated New Zealand product and site.",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "payhero",
@@ -525,7 +536,7 @@
     "pricing": "14-day free trial (as stated on site).",
     "nzNotes": "NZ-made payroll software (by FlexiTime). Integrates with Xero.",
     "nzMade": true,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "spellbook",
@@ -536,7 +547,7 @@
     "pricing": "7-day free trial (as stated on site).",
     "nzNotes": "",
     "nzMade": false,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   },
   {
     "id": "vxt",
@@ -547,6 +558,6 @@
     "pricing": "See site",
     "nzNotes": "NZ-made — NZ startup (NZVC portfolio company).",
     "nzMade": true,
-    "lastChecked": "2026-10-15"
+    "lastChecked": "2026-10-16"
   }
 ]

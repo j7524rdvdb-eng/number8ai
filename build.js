@@ -85,8 +85,16 @@ const orgLd={"@context":"https://schema.org","@type":"Organization","name":site.
 const webLd={"@context":"https://schema.org","@type":"WebSite","name":site.name,"url":site.baseUrl,"description":site.description,"inLanguage":"en-NZ","potentialAction":{"@type":"SearchAction","target":abs('/?q={search_term_string}'),"query-input":"required name=search_term_string"}};
 const listLd=(list,name)=>({"@context":"https://schema.org","@type":"ItemList","name":name,"numberOfItems":list.length,"itemListElement":list.map((t,i)=>({"@type":"ListItem","position":i+1,"item":{"@type":"SoftwareApplication","name":t.name,"url":t.url,"description":t.description,"applicationCategory":"BusinessApplication","operatingSystem":"Web"}}))});
 
+const faqs=[
+['What is '+site.name+'?',site.name+' is an independent, hand-checked directory of AI tools for New Zealand small businesses, grouped into '+cats.length+' categories with plain-English descriptions, pricing notes and NZ-specific notes such as Xero integration.'],
+['Which AI tools work with Xero?','Search the directory for “Xero”. Each listing’s NZ notes say when a tool integrates with Xero, as stated on the provider’s own site.'],
+['What does “NZ-made” mean?','“NZ-made” means the company was founded in or is based in New Zealand. Tick “Show NZ-made tools only” to see just those tools.'],
+['How up to date are the prices?','Pricing notes are copied from each provider’s website when we last checked ('+site.lastUpdated+'). Prices may be in USD or exclude GST, and “See site” means we haven’t verified a price, so always confirm on the provider’s site.'],
+['How do I get my tool listed?','Use the Submit a tool page or email '+site.contactEmail+'. Editorial listings are free; sponsored placements are always clearly labelled.']];
+const faqLd={"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs.map(([q,a])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}}))};
+const faqHtml=()=>`<section class="faq" id="faq" style="margin:40px 0"><div class="section-title"><h2>❓ Common questions</h2></div>${faqs.map(([q,a])=>`<details><summary><b>${esc(q)}</b></summary><p>${esc(a)}</p></details>`).join('')}</section>`;
 const pages={};
-pages['index.html']=layout({title:'',description:site.description,pathName:'/',active:'/',jsonld:[orgLd,webLd,listLd(tools,'AI tools for NZ small businesses')],body:`
+pages['index.html']=layout({title:'',description:site.description,pathName:'/',active:'/',jsonld:[orgLd,webLd,listLd(tools,'AI tools for NZ small businesses'),faqLd],body:`
 <div class="wrap">
 <section class="hero"><span class="eyebrow">🥝 Built for Aotearoa's small businesses</span>
 <h1>Find the AI tools that actually save Kiwi businesses time</h1>
@@ -103,6 +111,7 @@ ${featured()}
 </div>
 ${sections}
 <p class="empty">No tools match that search yet. <a href="${B}/submit/">Suggest one?</a></p>
+${faqHtml()}
 ${newsletter()}
 <p class="disclaimer">Pricing notes are as shown on each provider's website when we last checked (${esc(site.lastUpdated)}) and can change — always confirm on their site. Prices may be in USD or exclude GST. “NZ-made” means the company was founded in or is based in New Zealand. Listings are editorial; sponsored placements are always labelled.</p>
 </div>`});
@@ -175,7 +184,7 @@ fs.writeFileSync(path.join(OUT,'sitemap.xml'),`<?xml version="1.0" encoding="UTF
 fs.writeFileSync(path.join(OUT,'robots.txt'),`User-agent: *\nAllow: /\n\nSitemap: ${abs('/sitemap.xml')}\n`);
 const llms=[`# ${site.name}`,'',`> ${site.description}`,'',`Website: ${site.baseUrl}`,`Last updated: ${site.lastUpdated}`,`Machine-readable data: ${abs('/tools.json')}`,'',
 'Notes: Pricing is as shown on each provider\'s site when checked and may be in USD or exclude GST; "See site" means unverified. "NZ-made" means founded in or based in New Zealand.','',
-'## Pages',`- [Directory](${abs('/')}): all tools with search and category filter`,`- [Sponsor us](${abs('/sponsor/')})`,`- [Submit a tool](${abs('/submit/')})`,`- [About](${abs('/about/')})`,'',
+'## FAQ',...faqs.map(([q,a])=>`- ${q} ${a}`),'','## Pages',`- [Directory](${abs('/')}): all tools with search and category filter`,`- [Sponsor us](${abs('/sponsor/')})`,`- [Submit a tool](${abs('/submit/')})`,`- [About](${abs('/about/')})`,'',
 ...cats.flatMap(c=>{const l=tools.filter(t=>t.category===c.slug);return [`## ${c.name}`,`Category page: ${abs(`/category/${c.slug}/`)}`,...l.map(t=>`- [${t.name}](${t.url}): ${t.description} Pricing: ${t.pricing}${t.nzNotes?` NZ notes: ${t.nzNotes}`:''}`),''];})].join('\n');
 fs.writeFileSync(path.join(OUT,'llms.txt'),llms);
 fs.writeFileSync(path.join(OUT,'.nojekyll'),'');
