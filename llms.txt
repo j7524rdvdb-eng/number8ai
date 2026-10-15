@@ -3,10 +3,17 @@
 > A hand-checked directory of AI tools for New Zealand small businesses — from Xero-friendly bookkeeping to AI receptionists for tradies and cafés. Filter by what you need, see pricing notes and NZ-made picks.
 
 Website: https://j7524rdvdb-eng.github.io/number8ai/
-Last updated: 2026-10-15
+Last updated: 2026-10-16
 Machine-readable data: https://j7524rdvdb-eng.github.io/number8ai/tools.json
 
 Notes: Pricing is as shown on each provider's site when checked and may be in USD or exclude GST; "See site" means unverified. "NZ-made" means founded in or based in New Zealand.
+
+## FAQ
+- What is Number 8 AI? Number 8 AI is an independent, hand-checked directory of AI tools for New Zealand small businesses, grouped into 12 categories with plain-English descriptions, pricing notes and NZ-specific notes such as Xero integration.
+- Which AI tools work with Xero? Search the directory for “Xero”. Each listing’s NZ notes say when a tool integrates with Xero, as stated on the provider’s own site.
+- What does “NZ-made” mean? “NZ-made” means the company was founded in or is based in New Zealand. Tick “Show NZ-made tools only” to see just those tools.
+- How up to date are the prices? Pricing notes are copied from each provider’s website when we last checked (2026-10-16). Prices may be in USD or exclude GST, and “See site” means we haven’t verified a price, so always confirm on the provider’s site.
+- How do I get my tool listed? Use the Submit a tool page or email number8@mail.grokbot.com. Editorial listings are free; sponsored placements are always clearly labelled.
 
 ## Pages
 - [Directory](https://j7524rdvdb-eng.github.io/number8ai/): all tools with search and category filter
@@ -21,6 +28,7 @@ Category page: https://j7524rdvdb-eng.github.io/number8ai/category/accounting/
 - [Lightyear](https://www.lightyear.cloud/): AI accounts-payable automation: extracts line items from supplier bills, codes them and syncs them to your accounting software. Pricing: Free trial; see site. NZ notes: Integrates with Xero (listed on the Xero App Store NZ).
 - [Spotlight Reporting](https://www.spotlightreporting.com/): Management reporting, dashboards and cash-flow forecasting, with AI-assisted report commentary. Pricing: Free trial; see site. NZ notes: NZ-made — founded in Wellington. Integrates with Xero.
 - [Aider](https://www.aider.ai/): AI platform for accountants and bookkeepers that automates period close, flags anomalies and produces AI management reports for clients. Pricing: From NZ$150/month minimum + GST, 12-month commitment (as stated on site). NZ notes: NZ-made — based in Takapuna, Auckland. Connects to Xero; NZD pricing.
+- [ApprovalMax](https://approvalmax.com/): Bill and purchase-order approval workflows with OCR invoice capture and Approval Intelligence, AI agents that flag bills that break a supplier's usual pattern and let you search approval history in plain language. Pricing: 14-day free trial, no credit card required (as stated on site); see site for plan prices. NZ notes: Integrates with Xero (syncs bills, purchase orders, budgets and batch payments).
 
 ## Marketing & social
 Category page: https://j7524rdvdb-eng.github.io/number8ai/category/marketing/
